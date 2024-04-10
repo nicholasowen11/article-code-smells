@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <link rel="stylesheet" href="styling.css"> -->
     <title>LA01 Code Reengineering - Code Smells</title>
 </head>
+
 <body>
 
     <div class="navbar">
@@ -16,19 +18,56 @@
     <hr>
 
     <img src="./images/928260130959679518.webp" alt="Hmm??">
-    <h2>What is Code Smells?</h2>
-    <p>blablablablablablablablablabla</p>
-    <p>blablablablablablablablablabla</p>
-    <p>blablablablablablablablablabla</p>
-    <p>blablablablablablablablablabla</p>
-    <p>blablablablablablablablablabla</p>
+    <h2>What are Code Smells?</h2>
+    <p>
+        Code smells are warning signs in your code that indicate potential problems. They might not cause immediate
+        errors, but they can make your code harder to understand, maintain, and modify in the future. Imagine a kitchen
+        with a faint burning smell - it might not be a full-blown fire yet, but it suggests something needs attention.
+        There are a lot of code smells and these smells act like signposts, pointing towards areas where your code could
+        benefit from refactoring. By identifying and addressing code smells, you can keep your codebase clean,
+        well-organized, and easier to work with for yourself and your fellow developers.
+    </p>
 
     <img src="./images/928260130959679518.webp" alt="Refactoring">
     <h2>Why do we need to refactor the code?</h2>
-    <p>blablablablablablablablablabla</p>
-    <p>blablablablablablablablablabla</p>
-    <p>blablablablablablablablablabla</p>
-    <p>blablablablablablablablablabla</p>
+    <p>
+        Refactoring your code isn't just about making things look pretty; it's about investing in the long-term health
+        and maintainability of your software. Here's why refactoring can be crucial:
+    <ul>
+        <li>
+            <b>Improved Readability:</b>
+            <br>Clean, well-refactored code is like a well-written story - easier to understand for
+            both you and other developers. This reduces time spent deciphering complex logic and allows for faster
+            onboarding of new team members or revisiting your own code after some time.
+        </li>
+        <li>
+            <b>Reduced Maintenance Costs:</b>
+            <br>Code smells like duplication and long methods lead to a tangled mess
+            that's difficult to modify. Refactoring simplifies the structure and makes changes less error-prone. Imagine
+            trying to fix a circuit board with messy wires - refactoring is like organizing those wires for easier
+            troubleshooting and future modifications.
+        </li>
+        <li>
+            <b>Enhanced Flexibility:</b>
+            <br>Refactored code is often more modular and reusable. This means components
+            can be more easily adapted for new functionalities or integrated into different parts of your
+            application.Think of building blocks - refactoring allows you to create versatile blocks that can be used in
+            various combinations for future needs.
+        </li>
+        <li>
+            <b>Reduced Bugs:</b>
+            <br>Complex code with tight coupling is a breeding ground for errors. Refactoring promotes cleaner
+            separation of concerns and clearer data flow, making it easier to isolate and fix bugs. It's like
+            preventative maintenance for your code, minimizing potential issues before they arise.
+        </li>
+        <li>
+            <b>Increased Developer Productivity:</b>
+            <br>Developers working with clean, well-structured code spend less time wrestling with complexity and more
+            time focusing on adding new features or fixing critical issues. Refactoring empowers your team to work more
+            efficiently and deliver value faster.
+        </li>
+    </ul>
+    </p>
 
     <img src="./images/928260130959679518.webp" alt="Confuse">
     <h2>How do we refactor the bad smell code?</h2>
@@ -45,21 +84,21 @@
         <li>
             The Change Preventers
             <p>
-                These smells mean that if you need to change something in 
-                <br>one place in your code, you have to make many changes in 
-                <br>other places too. Program development becomes much more 
+                These smells mean that if you need to change something in
+                <br>one place in your code, you have to make many changes in
+                <br>other places too. Program development becomes much more
                 <br>complicated and expensive as a result.
             </p>
             <p>See the details below :</p>
             <ul>
                 <li>
-                    <a href="">Divergent Change</a>
+                    <a href="divergentchange.html">Divergent Change</a>
                 </li>
                 <li>
-                    <a href="">Parallel Inheritance Hierarchies</a>
+                    <a href="parallelinheritance.html">Parallel Inheritance Hierarchies</a>
                 </li>
                 <li>
-                    <a href="">Shotgun Surgery</a>
+                    <a href="shotgunsurgery.html">Shotgun Surgery</a>
                 </li>
             </ul>
         </li>
@@ -67,8 +106,8 @@
         <img src="./images/928260130959679518.webp" alt="Heheboy">
         <li>
             The Dispensables
-            <p>A dispensable is something pointless and unneeded whose 
-                <br>absence would make the code cleaner, more efficient and 
+            <p>A dispensable is something pointless and unneeded whose
+                <br>absence would make the code cleaner, more efficient and
                 <br>easier to understand.
             </p>
             <p>See the details below :</p>
@@ -100,4 +139,5 @@
     <a href="">Contact Us</a>
 
 </body>
+
 </html>

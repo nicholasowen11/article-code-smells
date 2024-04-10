@@ -1,0 +1,39 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-size: large;
+}
+
+.page {
+    padding: 1vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    font-size: 4vw;
+    font-weight: 900;
+    width: 50vw;
+}
+
+.content-field {
+    width: 50vw;
+    padding-top: 1vw;
+}
+
+.content-field-title {
+    font-size: 2vw;
+    font-weight: 700;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+}
+
+.description-field div {
+    padding-top: 0.25vw;
+    padding-bottom: 0.25vw;
+}
+
+.image-field img {
+    width: 50vw;
+}

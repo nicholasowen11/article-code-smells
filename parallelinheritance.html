@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles/page-style.css">
+    <title>Parallel Inheritance</title>
+</head>
+
+<body>
+    <div class="page">
+        <p class="title">Parallel Inheritance</p>
+        <div class="content-field">
+            <p class="content-field-title">Signs and Symptoms</p>
+            <p>
+                Inheritance hierarchies exists for related classes or modules, leading to code duplication and / or
+                increased complexity, and the need to create a subclass of another class when creating a subclass for a
+                class
+            </p>
+        </div>
+
+        <div class="content-field">
+            <p class="content-field-title">Reason for the Problem</p>
+            <p>
+                New classes keeps being added, making changes becoming harder and harder, some classes may even have
+                similar attributes and methods but getting split into multiple classes
+            </p>
+        </div>
+
+        <div class="content-field">
+            <p class="content-field-title">Example and Treatment</p>
+            <div class="description-field">
+                <div class="image-field">
+                    <img src="Assets/parallelinheritance1.png" alt="">
+                </div>
+                <div class="writings-field">
+                    <p>
+                        From the case above can be seen there are 2 payment methods, all are extended from the products
+                        table, but if one would to change the product table, that could possibly make the
+                        PyhsicalProduct, DigitalProduct or both of them not working as intended
+                    </p>
+                </div>
+            </div>
+            <div class="description-field">
+                <div class="image-field">
+                    <img src="Assets/parallelinheritance2.png" alt="">
+                </div>
+                <div class="writings-field">
+                    <p>
+                        so instead of extending from the products class, these payment classes can extend from a class
+                        where it specializes in payment which is payment strategy that only takes care of payment, where
+                        the payment strategy class then extends the product class, this way if the products class is
+                        ever changed, the only possible error appears inside the payments strategy, and should be easier
+                        to handle, it is also easier to add another payment method such as debit if needed (Move Method)
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

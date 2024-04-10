@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles/page-style.css">
+    <title>Shotgun Surgery</title>
+</head>
+
+<body>
+    <div class="page">
+        <p class="title">Shotgun Surgery</p>
+        <div class="content-field">
+            <p class="content-field-title">Signs and Symptoms</p>
+            <p>
+                A small change needs to made inside multiple places within the codebase when making modifications
+                inreasing the risk of missing some occurences and changes needed, and will also increase the chances of
+                bugs
+            </p>
+        </div>
+
+        <div class="content-field">
+            <p class="content-field-title">Reason for the Problem</p>
+            <p>
+                A single responsibility has been split up among a large number of classes, making modifications long and
+                painful for the ones to make them come to life
+            </p>
+        </div>
+
+        <div class="content-field">
+            <p class="content-field-title">Example and Treatment</p>
+            <div class="description-field">
+                <div class="image-field">
+                    <img src="Assets/shotgunsurgery1.png" alt="">
+                </div>
+                <div class="writings-field">
+                    <p>
+                        from the example above, can be seen that the order class is quite seperated and to make changes
+                        will require a lot of brute force, and is also less readable than a right, well written code
+                    </p>
+                </div>
+            </div>
+            <div class="description-field">
+                <div class="image-field">
+                    <img src="Assets/shotgunsurgery2.png" alt="">
+                </div>
+                <div class="writings-field">
+                    <p>
+                        so instead of mixing all of the logics and the decisions inside of the order class, we can move
+                        the logic methods into another class (discountStrategy) to make the decisions for us, making the
+                        order class as a middleman (Move method)
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles/page-style.css">
+    <title>Divergent Change</title>
+</head>
+
+<body>
+    <div class="page">
+        <p class="title">Divergent Change</p>
+        <div class="content-field">
+            <p class="content-field-title">Signs and Symptoms</p>
+            <p>
+                Divergent change code smell refers to a tupe of change in which a single class or modile needed to be
+                frequently modified, for multiple unrelated reasons, in other words, the calass or module is not having
+                a single well defined purpose, other symptoms might also be that modification is required to change a
+                part of the class
+            </p>
+        </div>
+
+        <div class="content-field">
+            <p class="content-field-title">Reason for the Problem</p>
+            <p>
+                Copypasta programming style, not paying attention to what the current class actually poses inside of a
+                program
+            </p>
+        </div>
+
+        <div class="content-field">
+            <p class="content-field-title">Example and Treatment</p>
+            <div class="description-field">
+                <div class="image-field">
+                    <img src="Assets/divergentchange1.png" alt="">
+                </div>
+                <div class="writings-field">
+                    <p>
+                        As seen on the example above, this is one of the examples of divergent change, a single report
+                        class can be seen doing a lot of function that will actually combine into one single function,
+                        where the methods inside of the class will not be used inside any other part of the code, making
+                        change almost impossible because every function is connected one to another, changing one means
+                        changing all of them
+                    </p>
+                </div>
+            </div>
+            <div class="description-field">
+                <div class="image-field">
+                    <img src="Assets/divergentchange2.png" alt="">
+                </div>
+                <div class="writings-field">
+                    <p>
+                        For the solution, using extract superclass should be the right solution, making the report class
+                        a single class that does a report on everything needed by the user (Extract Superclass)
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
