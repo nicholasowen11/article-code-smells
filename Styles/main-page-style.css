@@ -1,0 +1,18 @@
+.main-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 90vh;
+}
+
+.main-title {
+    font-size: 4vw;
+    font-weight: 900;
+}
+
+.main-content-field {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
