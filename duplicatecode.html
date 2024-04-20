@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duplicate Code</title>
+    <link rel="stylesheet" href="Styles/page-style.css">
+</head>
+
+<body>
+    <div class="page">
+        <p class="title">Duplicate Code</p>
+        <div class="content-field">
+            <p class="content-field-title">Signs and Symptoms</p>
+            <p>
+                Duplicate code is when there are two fragments of the identical or same code that does almost exactly
+                the same thing, making it memory inefficient and crowding the whole coding space with unnecessary code,
+                which will also slow the inner workings of the code.
+            </p>
+        </div>
+
+        <div class="content-field">
+            <p class="content-field-title">Reason for the Problem</p>
+            <p>
+                The causes will be that multiple programmers are working on the same project on different parts of the
+                same program at the same time, since they are working on the same task, they sometimes will require to
+                make the code, not realizing that the code they need has been made by the other person which is also
+                working on the code, sometimes duplication is purposeful, when rushing to meet deadline and the existing
+                code is "almost right" for the job, novice programmer may not be able to resist the temptation to just
+                simply copy and paste the required work
+            </p>
+        </div>
+
+        <div class="content-field">
+            <p class="content-field-title">Example and Treatment</p>
+            <div class="description-field">
+                <div class="image-field">
+                    <img src="Assets/duplicatecode1.png" alt="">
+                </div>
+                <div class="writings-field">
+                    <p>
+                        From the code above it can be seen that the Order class will take care both the discounted and
+                        non-discounted items, but it is separated inside of two different methods, which essentially is
+                        also the same method with different outputs, making the code crowded for no apparent reason
+                    </p>
+                </div>
+            </div>
+            <div class="description-field">
+                <div class="image-field">
+                    <img src="Assets/duplicatecode2.png" alt="">
+                </div>
+                <div class="writings-field">
+                    <p>
+                        To solve the problem we can simply make the order as a class with only one method, but the
+                        method will be handling both discounted and non-discounted items, this will not only clear the
+                        code, but also making it easier to maintain <b>(Extract Method followed by Pull Up Field)</b>
+                        other methods would be to do the <b>Pull Up Constructor Body</b> more
+                        methods that can be used includes <b>Form Template Method</b> and other one will be to
+                        <b>Substitute Algorithm</b>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-field">
+            <div class="content-field-title">Payoff</div>
+            <p>
+                Merging duplicate code simplifies the structure of the code and makes it shorter, it make sense when you
+                think about it that when someone is making a method with almost the same function, insetad of using 2
+                methods, one can simply combine both methods into the same method and call it a day, the code then will
+                also be much more easier to understand and cheaper to support
+            </p>
+        </div>
+
+        <div class="content-field">
+            <div class="content-field-title">When to Ignore</div>
+            <p>
+                In very rare cases, merging two identical fragments can make the code less intuitive and obvious, some
+                parts are meant to be split up i guess
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

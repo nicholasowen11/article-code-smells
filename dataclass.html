@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Class</title>
+    <link rel="stylesheet" href="Styles/page-style.css">
+</head>
+
+<body>
+    <div class="page">
+        <p class="title">Title Here</p>
+        <div class="content-field">
+            <p class="content-field-title">Signs and Symptoms</p>
+            <p>
+                Data classes are classes that only stores data and crude methods such as setters and getters for the
+                data. Which in simple terms are containers used by other class to store their data within a space. These
+                classes do not contain any additional functionality and cannot independently operate on the data that
+                they own nor can they process them.
+            </p>
+        </div>
+
+        <div class="content-field">
+            <p class="content-field-title">Reason for the Problem</p>
+            <p>
+                It is a normal thing when a newly created class contains only a few public fields and a handful of
+                getters and setters, but when it stays like this for a very long time and is not getting modified, it
+                will sooner or later cause a problem
+            </p>
+        </div>
+
+        <div class="content-field">
+            <p class="content-field-title">Example and Treatment</p>
+            <div class="description-field">
+                <div class="image-field">
+                    <img src="Assets/dataclass1.png" alt="">
+                </div>
+                <div class="writings-field">
+                    <p>
+                        As seen from the class, the class only stores data, sometimes it could also be good and did not
+                        need refactoring such as in this case, it could actually be treated like a variable with a lot
+                        of available values, but in the case where it is not good to do thism, there are several ways to
+                        refactor it such as <b>Encapsulate Field or Collection</b> and <b>Move or Extract Method</b>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-field">
+            <div class="content-field-title">Payoff</div>
+            <p>
+                By fixing these types of classes it will improve the undersyanding and organization of code, not only
+                because they are inside a single class but also because all variables are gathered inside a single
+                place, rather than getting split up inside a lot of subclass and is also easier to spot the happening
+                dupllication and also making maintanance a lot simpler
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>l

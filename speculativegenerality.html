@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speculative Generality</title>
+    <link rel="stylesheet" href="Styles/page-style.css">
+</head>
+
+<body>
+    <div class="page">
+        <p class="title">Title Here</p>
+        <div class="content-field">
+            <p class="content-field-title">Signs and Symptoms</p>
+            <p>
+                Speculative Generality is similar to the dead code smell but instead of the code being unused because it
+                is no longer relevant, the opposite happens, it it a piece of code that is made to accomodate for the
+                future but that future is not on the current development time, making the code much more complicated and
+                unnecessarily hard to support and understand
+            </p>
+        </div>
+
+        <div class="content-field">
+            <p class="content-field-title">Reason for the Problem</p>
+            <p>
+                Sometimes a code is created "just in case" to support eh features that is either never get implemented
+                or is just planned and not being executed.
+            </p>
+        </div>
+
+        <div class="content-field">
+            <p class="content-field-title">Example and Treatment</p>
+            <div class="description-field">
+                <div class="image-field">
+                    <img src="Assets/speculativegenerality.png" alt="">
+                </div>
+                <div class="writings-field">
+                    <p>
+                        As seen from the code above, the developer gets the book ready for the update that he is
+                        expecting to come, even though it has not been confirmed yet, he expects the book borrowing
+                        system will have more features such as dates and the customer, but the developer implements it
+                        immediately without waiting for confirmation which could make the program complicated, there are
+                        two cases that might happen here, the first one the feature will be implemented and the code
+                        will not be a smell, but the other one is the code being a smell and making the entire process
+                        of making or manipulating this current classs difficult.
+                    </p>
+                </div>
+            </div>
+            <div class="description-field">
+                <div class="image-field">
+                    <img src="Assets/speculativegenerality2.png" alt="">
+                </div>
+                <div class="writings-field">
+                    <p>
+                        The solution to the problem above is to remove the complexity and return to the default book
+                        borrowing form by using the boolean to check if a book is currently being borrowed <b>(Inline
+                            Class)</b> or other methods could involve the <b>Inline Method, Remove Paramenter, or Remove
+                            Fields</b> in which all will simplify on how the code will be implemented
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-field">
+            <div class="content-field-title">Payoff</div>
+            <p>
+                With the unused code removed, the code size will also be reduced and is also easier to support and
+                control simply because the developer won't need to worry about that piece of code that won't be used
+                either ways
+            </p>
+        </div>
+
+        <div class="content-field">
+            <div class="content-field-title">When to Ignore</div>
+            <p>
+                If one is working in with a framework, it is reasonable to create functionality that won't be used
+                inside the framework itself, the functionality may be needed by the user, so don't delete it, also
+                before deleting the codes, make sure that is is not in the unit test, this happends if tests need a way
+                to get certain internal information from a class or perform special testing-related actions
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

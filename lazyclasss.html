@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lazy Class</title>
+    <link rel="stylesheet" href="Styles/page-style.css">
+</head>
+
+<body>
+    <div class="page">
+        <p class="title">Lazy Classs</p>
+        <div class="content-field">
+            <p class="content-field-title">Signs and Symptoms</p>
+            <p>
+                A lazy class is as the name suggests is a class that does not did enough to be considered a working
+                class, especially when considering which class to keep, because keeping class will also require cost,
+                time and money, so if a class does not need one's attention simply delete them or collapse them
+            </p>
+        </div>
+
+        <div class="content-field">
+            <p class="content-field-title">Reason for the Problem</p>
+            <p>
+                A class could be made before it is broken into multiple classes because of refactoring that has been
+                done into the class, then what is left is a small fragment of the class unworthy to be called a class,
+                which is either too small, too unfunctional or many other reasons, or maybe that this class could be a
+                class that has been planned on future development that no one has even had time to get done.
+            </p>
+        </div>
+
+        <div class="content-field">
+            <p class="content-field-title">Example and Treatment</p>
+            <div class="description-field">
+                <div class="image-field">
+                    <img src="Assets/lazyclass1.png" alt="">
+                </div>
+                <div class="writings-field">
+                    <p>
+                        The class above is a lazy class where it only serves to insert a value and it is not worth to be
+                        kept, not only it is wasting memory but is also making the code complex with no apparent
+                        reasoning
+                    </p>
+                </div>
+                <div class="image-field">
+                    <img src="Assets/lazyclass2.png" alt="">
+                </div>
+                <div class="writings-field">
+                    <p>
+                        To treat this class in particular one could use the <b>Collapse Class</b> to make the class into
+                        another class without creating another class, it is proven effective where the User class takes
+                        care of it's own address instead of using another class as a middleman another method which can
+                        be used for subclasses with few functions is the <b>Collapse Hierarchy</b>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-field">
+            <div class="content-field-title">Payoff</div>
+            <p>
+                Reducing the code size because when combinging two class, it will reduce the code complexity bus still
+                maintaining it's function, and it will be much more easier to maintain
+            </p>
+        </div>
+
+        <div class="content-field">
+            <div class="content-field-title">When to Ignore</div>
+            <p>
+                Sometimes this type of class is created in order to delineate intentions for future development, even
+                though it could be counted sa speculative generality, it is better for the code to not get refactored,
+                since it will be used in the future, in which will maintain both balance and simplicity
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
